@@ -16,9 +16,10 @@ const config: Config = {
         "levitate-bubbles": "levitate 4s infinite",
       },
       colors: {
-        "hack-green": "#3BAF0B",
-        "hack-gray": "#426466",
-      },
+        'hack-green': "#3BAF0B",
+        'hack-gray': "#426466",
+        'hack-light-green': "#B4FF95"
+      }
     },
   },
   plugins: [],
