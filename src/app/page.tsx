@@ -1,13 +1,13 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import AboutHack from './components/AboutHack';
-import ForCompany from './components/ForCompany';
-import PartnershipSection from './components/Cart/PartnershipSection'
-import Partners from './components/Partners'
-import AboutBest from './components/AboutBest'
-import Contacts from './components/Contacts'
-import Footer from './components/Footer'
-import Statistic from './components/Statistic';
+import AboutBest from "@/components/AboutBest";
+import AboutHack from "@/components/AboutHack";
+import PartnershipSection from "@/components/Cart/PartnershipSection";
+import Contacts from "@/components/Contacts";
+import Footer from "@/components/Footer";
+import ForCompany from "@/components/ForCompany";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
+import Statistic from "@/components/Statistic";
 
 export default function Home() {
   return (
@@ -25,5 +25,5 @@ export default function Home() {
       <Contacts />
       <Footer />
     </main>
-  )
+  );
 }
