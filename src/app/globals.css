@@ -9,3 +9,23 @@
 :root {
   color-scheme: dark;
 }
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+}
+
+@keyframes levitate {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    @apply translate-y-10 scale-105;
+  }
+  50% {
+    @apply translate-y-0 scale-100;
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  }
+}
+
+

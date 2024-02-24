@@ -7,6 +7,7 @@ import Partners from './components/Partners'
 import AboutBest from './components/AboutBest'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
+import Statistic from './components/Statistic';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <AboutHack />
       <ForCompany />
+      <Statistic />
 
       <PartnershipSection />
 

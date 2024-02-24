@@ -6,8 +6,8 @@ import { inter, press_start, inter_bold } from "../fonts";
 
 export default function AboutHack() {
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center max-w-6xl lg:mx-auto my-12 mx-10" id='about'>
-            <h3 className={`${press_start.className} text-hack-green text-2xl md:text-4xl text-center`}>Hackath0n - це...</h3>
+        <section className="min-h-screen flex flex-col items-center justify-center max-w-6xl lg:mx-auto my-12 mx-10">
+            <h3 className={`${press_start.className} text-hack-green text-2xl md:text-4xl text-center`} id='about'>Hackath0n - це...</h3>
             <div className="flex grid-rows gap-4 items-center p-2 lg:text-left text-center">
                 <div className={`${inter.className} col-span-2 p-5`}>
                     <p className="pb-5">BEST::HACKath0n — це захід, під час якого студенти IT-спеціальностей у командах створюють новий програмний продукт протягом 24 годин у форматі non-stop programming.</p>

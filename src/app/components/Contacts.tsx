@@ -2,9 +2,6 @@ import Image from "next/image"
 import { press_start,inter } from "@/app/fonts"
 import { useState } from "react"
 
-function Contact(){
-    
-}
 
 export default function Contacts() {
     return(
@@ -46,7 +43,7 @@ export default function Contacts() {
                 <a className={`${inter.className} text-white flex justify-center mt-4 hover:scale-105`} href="tel:+380 66 665 84 31">
                     +380991323749
                 </a>
-                <a className={`${inter.className} text-white flex justify-center mb-5 hover:scale-105 `} href="mailto:illia.shestak.best@gmail.com">
+                <a className={`${inter.className} text-white flex justify-center text-center mb-5 hover:scale-105 `} href="mailto:illia.shestak.best@gmail.com">
                     mariia.zarvanska@best-eu.org
                 </a>
             </div>
