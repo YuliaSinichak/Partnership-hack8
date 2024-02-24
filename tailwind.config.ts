@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         'hack-green': "#3BAF0B",
         'hack-gray': "#426466",
+        'hack-light-green': "#B4FF95"
       }
     },
   },

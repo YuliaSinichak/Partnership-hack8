@@ -5,7 +5,7 @@ import { useState } from "react"
 
 export default function Contacts() {
     return(
-        <div className="grid gap-5 md:gap-20 w-full grid-cols-1 lg:grid-cols-3 p-20" id="contacts">
+        <div className="grid gap-5 md:gap-20 w-full grid-cols-1 lg:grid-cols-3 md:p-20 p-12 pt-0 " id="contacts">
             <div className="col-span-1 w-full flex flex-col justify-center items-center order-2 lg:order-1 hover:scale-105 transition-all duration-500 py-5">
             <Image src="/arrow.svg" width={50} height={50} alt="arrow" className="animate-bounce w-12 h-12 m-3" /> 
             <p className={` ${press_start.className} text-gray-300 text-xs text-center p-4 `}>відповідальний за корпоративні зв`язки</p>
