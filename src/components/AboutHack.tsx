@@ -13,8 +13,10 @@ export default function AboutHack() {
         Hackath0n - це...
       </h3>
       <div className="flex grid-rows gap-4 items-center p-2 lg:text-left text-center">
-        <div className={`${inter.className} col-span-2 p-5`}>
-          <p className="pb-5">
+        <div
+          className={`${inter.className} col-span-2 flex flex-col gap-6 lg:p-6`}
+        >
+          <p>
             BEST::HACKath0n — це захід, під час якого студенти IT-спеціальностей
             у командах створюють новий програмний продукт протягом 24 годин у
             форматі non-stop programming.
@@ -36,7 +38,7 @@ export default function AboutHack() {
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-11 items-center">
-        <div className=" pl-6">
+        <div>
           <Carousel />
         </div>
 
