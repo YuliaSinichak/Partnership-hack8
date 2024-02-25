@@ -1,23 +1,25 @@
-import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
+import "./globals.css";
 
-import { inter } from './fonts'
+import { inter } from "./fonts";
 
-import Providers from '@/redux/Providers'
+import Providers from "@/redux/Providers";
 
 export const metadata: Metadata = {
-  title: 'Partnership Hackath0n`8',
-  description: 'Best Hackath0n`8 partnership broshure',
-}
+  title: "Partnership Hackath0n`8",
+  description: "Best Hackath0n`8 partnership broshure",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black`}>{children}</body>
+      <body className={`${inter.className} bg-neutral-950 text-neutral-100`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
-  )
+  );
 }

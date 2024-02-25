@@ -2,8 +2,9 @@
 import { RootState } from "@/redux/store";
 import { iOptional, iSellingPoint } from "@/types";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 import { useRef } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -11,8 +12,9 @@ import * as Yup from "yup";
 import { generateMessage } from "@/hooks/generateEmail";
 
 import { inter, press_start } from "@/app/fonts";
+import { toggleOptionActive } from "@/redux/optionalSlice";
+import { toggleSponsorship } from "@/redux/sponsorshipSlice";
 
-// Create a Yup schema for form validation
 const validationSchema = Yup.object({
   company_name: Yup.string().required("Required"),
   company_email: Yup.string()
@@ -21,29 +23,61 @@ const validationSchema = Yup.object({
 });
 
 const SP = ({ name, price }: iSellingPoint) => {
+  const dispatch = useDispatch();
+
+  const handleDelete = (name: string) => {
+    dispatch(toggleSponsorship({ name }));
+  };
+
   return (
     <div className="w-full flex flex-col justify-between items-start">
       <div className="w-full flex flex-row justify-between items-center">
         <span className={`${inter.className} text-3xl`}>{name}</span>
-        <span className={`${press_start.className} text-hack-green text-xl`}>
-          ${price}
-        </span>
+        <div className="flex gap-2">
+          <span className={`${press_start.className} text-hack-green text-xl`}>
+            ${price}
+          </span>
+
+          <Image
+            src="/cross.svg"
+            width={50}
+            height={50}
+            alt="cross"
+            className="w-8 h-8 cursor-pointer"
+            onClick={() => handleDelete(name)}
+          />
+        </div>
       </div>
-      <span className="text-xl">+</span>
     </div>
   );
 };
 
 const OPT = ({ name, price }: iOptional) => {
+  const dispatch = useDispatch();
+
+  const handleDelete = (name: string) => {
+    dispatch(toggleOptionActive({ name }));
+  };
+
   return (
     <div className="w-full flex flex-col justify-between items-start">
-      <div className="w-full flex flex-row justify-between items-center">
-        <span className={`${inter.className} text-3xl`}>{name}</span>
-        <span className={`${press_start.className} text-hack-green text-xl`}>
-          ${price}
-        </span>
+      <div className="w-full flex flex-row justify-between gap-2">
+        <span className={`${inter.className} text-xl flex-1`}>{name}</span>
+        <div className="flex gap-2 items-start">
+          <span className={`${press_start.className} text-hack-green text-xl`}>
+            ${price}
+          </span>
+
+          <Image
+            src="/cross.svg"
+            width={50}
+            height={50}
+            alt="cross"
+            onClick={() => handleDelete(name)}
+            className="w-8 h-8 cursor-pointer"
+          />
+        </div>
       </div>
-      <span className="text-xl">+</span>
     </div>
   );
 };
@@ -123,21 +157,21 @@ export default function Cart() {
   });
 
   return (
-    <section className="flex flex-col items-center justify-center mx-auto w-full max-w-[1400px] gap-8 my-10 self-center">
+    <section className="flex flex-col items-center justify-center w-full gap-8 p-8 my-10 self-center">
       <h2
         className={`${press_start.className} text-hack-green text-3xl md:text-5xl my-16 text-center`}
       >
         Кошик
       </h2>
-      <div className="w-auto">
+      <div className="mx-auto w-full max-w-5xl">
         <div className="col-span-1 flex flex-col gap-5">
           <form
-            className="border rounded-2xl lg:py-6 lg:px-14 px-20 py-4 flex flex-rows gap-10"
+            className="border rounded-xl lg:py-6 lg:px-14 px-4 py-4 flex flex-col md:flex-row gap-4 lg:gap-10"
             onSubmit={formik.handleSubmit}
           >
-            <div className="col-span-2 max-w-lg mx-auto w-full flex flex-col gap-5">
+            <div className="col-span-2 max-w-lg mx-auto w-full flex flex-col justify-between gap-5">
               <h3
-                className={`${press_start.className} text-center text-hack-green text-2xl`}
+                className={`${press_start.className} text-center text-hack-green text-xl`}
               >
                 Offers
               </h3>
@@ -146,7 +180,7 @@ export default function Cart() {
               {optionalPoints.filter((opt) => opt.active).length ? (
                 <>
                   <h3
-                    className={`${press_start.className} text-center text-hack-green text-2xl`}
+                    className={`${press_start.className} text-center text-hack-green text-xl`}
                   >
                     Options
                   </h3>
@@ -168,7 +202,7 @@ export default function Cart() {
                 ref={inputRef}
                 type="text"
                 name="company_name"
-                className="w-full mt-8 p-5 border-2 focus:border-hack-green outline-none text-lg bg-transparent rounded-2xl"
+                className="w-full mt-4 p-5 border-2 focus:border-hack-green outline-none text-lg bg-transparent rounded-xl"
                 placeholder="Назва компанії"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -180,7 +214,7 @@ export default function Cart() {
               <input
                 type="email"
                 name="company_email"
-                className="w-full mt-8 p-5 border-2 focus:border-hack-green outline-none text-lg bg-transparent rounded-2xl"
+                className="w-full mt-4 p-5 border-2 focus:border-hack-green outline-none text-lg bg-transparent rounded-xl"
                 placeholder="Email"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -193,10 +227,10 @@ export default function Cart() {
               ) : null}
               <button
                 // disabled={!formik.isValid || formik.isSubmitting}
-                className={`${press_start.className} border-2 rounded-xl bg-black border-hack-green hover:scale-105 focus: text-hack-green outline-none w-full sm:w-fit px-10 py-4 my-5 self-center text-md`}
+                className={`${press_start.className} border-2 rounded-xl bg-black border-hack-green hover:scale-105 w-full text-hack-green outline-none px-10 py-4 my-5 self-center text-md`}
                 type="submit"
               >
-                Оформити
+                Замовити
               </button>
             </div>
           </form>

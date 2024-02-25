@@ -7,6 +7,7 @@ import { CardProps, ModalParams, dataItem } from "@/types";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 
+//TODO: тут треба описати вибіркові пакети
 const explanation: {
   Basic: dataItem[];
   Preceptor: dataItem[];
@@ -141,26 +142,26 @@ const Card = ({
   };
 
   return (
-    <div className={name === "Basic" ? "w-auto" : "flex"}>
+    <div className={"flex w-full"}>
       <div
         onClick={(e) => {
           e.stopPropagation();
           handleTogglePacket();
         }}
-        className={`cursor-pointer rounded-3xl backdrop-blur-lg min-w-[300px] sm:min-w-[400px] md:min-w-[580px] mx-auto bg-black bg-opacity-30 flex flex-col border-grey justify-between gap-3 md:gap-5 p-7 ${
-          active ? "border-hack-green border-2" : ""
+        className={`cursor-pointer rounded-2xl w-full backdrop-blur-lg bg-black bg-opacity-30 flex flex-col border-grey justify-between gap-3 md:gap-5 p-4 lg:p-8 border-2 ${
+          active ? "border-hack-green " : "border-neutral-500"
         }`}
       >
-        <div className="flex w-full justify-between items-start my-3 max-w-xl">
+        <div className="flex w-full justify-between items-start max-w-xl">
           <h5
-            className={`${press_start.className} text-2xl md:text-4xl self-center`}
+            className={`${press_start.className} text-xl md:text-4xl self-center`}
           >
             {name}
           </h5>
           <button
             className={`${press_start.className} ${
               compulsory ? "cursor-not-allowed" : "cursor-auto"
-            } text-xl md:text-xl bg-black rounded-xl border-2 w-fit border-hack-green text-hack-green px-10 py-2 self-center`}
+            } text-xl md:text-xl bg-black rounded-xl border-2 w-fit border-hack-green text-hack-green px-4 lg:px-10 py-2 self-center`}
           >{`${price}$`}</button>
         </div>
         <div className="w-full">
@@ -171,11 +172,6 @@ const Card = ({
           ))}
         </div>
         <div className="flex flex-row justify-between items-end md:gap-4 gap-1">
-          {annotation && (
-            <span className="text-white bg-black border border-white text-ms md:text-md md:py-3 py-1.5 md:px-4 px-2 rounded-xl h-fit">
-              {annotation}
-            </span>
-          )}
           <button
             onClick={() => {
               handleModal({ name, modalData: explanation[name] as any });
@@ -189,6 +185,11 @@ const Card = ({
               className="md:w-12 w-8"
             />
           </button>
+          {annotation && (
+            <span className="text-white bg-black border border-white text-ms md:text-md md:py-3 py-1.5 md:px-4 px-2 rounded-lg h-fit">
+              {annotation}
+            </span>
+          )}
         </div>
       </div>
     </div>
@@ -213,7 +214,7 @@ export default function Offers() {
       >
         Пропозиції
       </h2>
-      <div className="flex flex-col justify-center gap-10">
+      <div className="flex flex-col justify-center gap-4">
         {sellingPoints.map((sp) => {
           return <Card key={sp.name} handleModal={handleModal} {...sp} />;
         })}
