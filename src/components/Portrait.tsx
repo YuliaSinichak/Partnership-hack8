@@ -38,11 +38,11 @@ export default function Portrait() {
             />
         <div className="justify-between align-middle items-center gap-5">
                 <Image
-                src="/Portrait.png"
-                width={500}
-                height={500}
+                src="/HackPhoto.png"
+                width={350}
+                height={350}
                 alt="hack"
-                className="absolute -right-24 bottom-36 w-auto hidden lg:flex z-10 "
+                className="absolute -right-12 bottom-36 w-auto hidden lg:flex z-10 "
                 />
             <div className="flex flex-col gap-4 items-center justify-center self-center ">
                 <div className="border border-hack-green p-10 text-center text-xl rounded-xl w-80 hover:scale-102 backdrop-blur-md">
@@ -60,11 +60,11 @@ export default function Portrait() {
                 </div>
             </div>
           <Image
-            src="/Portrait.png"
-            width={500}
-            height={500}
+            src="/HackPhoto.png"
+            width={350}
+            height={350}
             alt="hack"
-            className="absolute -left-24 bottom-36 w-auto hidden lg:flex z-10"
+            className="absolute -left-12 bottom-36 w-auto hidden lg:flex z-10 rounded-xl"
           />
         </div>   
         </div>
