@@ -85,7 +85,7 @@ export default function Partners() {
       <h2
         className={`${press_start.className} text-hack-green text-2xl lg:text-4xl my-2 text-center`}
       >
-        Наші партнери
+        Нас підтримували
       </h2>
 
       <div className="gap-10 flex flex-wrap w-full justify-center">

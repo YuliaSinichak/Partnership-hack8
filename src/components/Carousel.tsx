@@ -23,7 +23,7 @@ export default function Carousel() {
     >
       <SwiperSlide>
         <Image
-          src="/Carusel5.svg"
+          src="/Carusel1.png"
           alt="hack"
           width={600}
           height={450}
@@ -32,7 +32,7 @@ export default function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src="/Carusel2.svg"
+          src="/Carusel2.png"
           alt="hack"
           width={600}
           height={450}
@@ -41,7 +41,7 @@ export default function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src="/Carusel3.svg"
+          src="/Carusel3.png"
           alt="hack"
           width={600}
           height={450}
@@ -50,7 +50,7 @@ export default function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src="/Carusel4.svg"
+          src="/Carusel4.png"
           alt="hack"
           width={600}
           height={450}

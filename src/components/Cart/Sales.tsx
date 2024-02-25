@@ -5,6 +5,13 @@ export default function Sales(){
     return(
         <div className="relative z-0 min-h-screen w-full flex flex-col items-center justify-center">
             <Image
+                src="/Elipse.png"
+                width={500}
+                height={500}
+                alt=" "
+                className="absolute -left-32 opacity-30 lg:opacity-100 blur-sm lg:blur-none max-w-lg pointer-events-none"
+            />
+            <Image
                 src="/BubblesPart1.png"
                 width={500}
                 height={500}
@@ -19,6 +26,13 @@ export default function Sales(){
                 className="absolute -left-28 opacity-30 lg:opacity-100 blur-xs lg:blur-none max-w-lg pointer-events-none levitate-bubbles2"
             />
 
+            <Image
+                src="/Elipse.png"
+                width={500}
+                height={500}
+                alt=" "
+                className="absolute -right-32 opacity-30 lg:opacity-100 blur-sm lg:blur-none max-w-lg pointer-events-none rotate-45"
+            />
             <Image
                 src="/BubblesPart1.png"
                 width={500}

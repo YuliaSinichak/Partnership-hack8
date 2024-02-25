@@ -29,11 +29,11 @@ export default function AboutBest() {
           className={`${inter.className} text-center lg:text-left text-sm md:text-xl p-3 md:col-span-7 col-span-12 relative`}
         >
           <Image
-            src="/ElipseAB.svg"
+            src="/Elipse.png"
             width={600}
             height={600}
             alt=" "
-            className="absolute -left-4 lg:-left-24 -top-48 pointer-events-none"
+            className="absolute -left-4 lg:-left-24 -top-64 pointer-events-none animate-pulse-new"
           />
           <span className={inter_bold.className}>
             BEST Lviv (Board of European Students of Technology)
