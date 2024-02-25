@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  transition: all 150ms ease-in-out;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+}
+
+@keyframes levitatePart1 {
+  0%,
+  100% {
+    transform: translateY(-5%) translateX(0%);
+  }
+  50% {
+    transform: translateY(0%) translateX(5%);
+  }
+}
+
+.levitate-bubbles1 {
+  animation: levitatePart1 5s infinite ease-in-out;
+}
+@keyframes levitatePart2 {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+}
+
+.levitate-bubbles2 {
+  animation: levitatePart2 5s infinite ease-in-out;
+}
+
+@keyframes rotateAndBounce {
+  0% {
+    transform: rotate(0deg) translateY(0%);
+  }
+  25% {
+    transform: rotate(-30deg) translateY(-15%) translateX(-5%);
+  }
+  50% {
+    transform: rotate(-45deg) translateY(-0%) translateX(-20%);
+  }
+  75% {
+    transform: rotate(-30deg) translateY(-15%) translateX(-5%);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0%);
+  }
+}
+
+.rotate-and-bounce {
+  animation: rotateAndBounce 2s infinite ease-in-out;
+}
