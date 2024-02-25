@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Statistic from "@/components/Statistic";
+import Feedbacks from "@/components/Feedbacks";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <PartnershipSection />
 
       <Partners />
+      <Feedbacks />
       <AboutBest />
       <Contacts />
       <Footer />
