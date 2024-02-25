@@ -13,7 +13,6 @@ const config: Config = {
       },
       animation: {
         "spin-slow": "spin 30s linear infinite",
-        "levitate-bubbles": "levitate 4s infinite",
       },
       colors: {
         'hack-green': "#3BAF0B",
