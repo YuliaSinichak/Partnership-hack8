@@ -38,9 +38,9 @@ export default function Portrait() {
             />
         <div className="justify-between align-middle items-center gap-5">
                 <Image
-                src="/ForPartners2.svg"
-                width={400}
-                height={400}
+                src="/Portrait.png"
+                width={500}
+                height={500}
                 alt="hack"
                 className="absolute -right-24 bottom-36 w-auto hidden lg:flex z-10 "
                 />
@@ -60,9 +60,9 @@ export default function Portrait() {
                 </div>
             </div>
           <Image
-            src="/ForPartners2.svg"
-            width={400}
-            height={400}
+            src="/Portrait.png"
+            width={500}
+            height={500}
             alt="hack"
             className="absolute -left-24 bottom-36 w-auto hidden lg:flex z-10"
           />

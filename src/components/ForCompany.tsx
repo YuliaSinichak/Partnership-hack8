@@ -64,7 +64,7 @@ export default function ForCompany() {
             className="absolute -left-4 -bottom-16 lg:-left-28 lg:-bottom-32 pointer-events-none levitate-bubbles2 rotate-90 z-30"
           />
           <Image
-            src="/ForPartners1.svg"
+            src="/ForCompany.png"
             width={450}
             height={450}
             alt="hack"
@@ -73,7 +73,7 @@ export default function ForCompany() {
         </div>
         <div className="flex items-center justify-center">
           <Image
-            src="/ForPartners2.svg"
+            src="/ForCompany2.png"
             width={400}
             height={400}
             alt="hack"
