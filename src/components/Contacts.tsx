@@ -70,7 +70,7 @@ export default function Contacts() {
     >
       <Contact
         name="Шестак Ілля"
-        imageSrc="/Illia.svg"
+        imageSrc="/Ilia.png"
         phoneNumber="+380666658431"
         email="illia.shestak.best@gmail.com"
         role="відповідальний за корпоративні зв'язки"
@@ -78,7 +78,7 @@ export default function Contacts() {
       />
       <Contact
         name="Тетяна Панчук"
-        imageSrc="/Tanya.svg"
+        imageSrc="/Tetiana.png"
         phoneNumber="+380978077397"
         email="tetianapanchuk04@gmail.com"
         role="головна організаторка"
@@ -86,7 +86,7 @@ export default function Contacts() {
       />
       <Contact
         name="Марія Зарванська"
-        imageSrc="/Mariia.svg"
+        imageSrc="/Mariia.png"
         phoneNumber="+380991323749"
         email="mariia.zarvanska@best-eu.org"
         role="відповідальна за корпоративні зв'язки"

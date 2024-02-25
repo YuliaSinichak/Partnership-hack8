@@ -29,3 +29,26 @@
 }
 
 
+@keyframes rotateAndBounce {
+  0% {
+    transform: rotate(0deg) translateY(1%);
+  }
+  25% {
+    transform: rotate(-30deg) translateY(-15%);
+  }
+  50% {
+    transform: rotate(-45deg) translateY(-15%) translateX(-10%);
+  }
+  75% {
+    transform: rotate(-30deg) translateY(5%) translateX(-1%);
+  }
+  100% {
+    transform: rotate(0deg) translateY(1%);
+  }
+}
+
+
+.rotate-and-bounce {
+  animation: rotateAndBounce 2s infinite ease-in-out;
+
+}

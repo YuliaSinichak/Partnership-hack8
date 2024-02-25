@@ -3,60 +3,60 @@ import Image from "next/image";
 
 const partnersData = [
   {
-    imgSrc: "/partner1.svg",
-    alt: "partner1",
+    imgSrc: "/partners/soft.svg",
+    alt: "softserve",
   },
   {
-    imgSrc: "/partner2.svg",
-    alt: "partner2",
+    imgSrc: "/partners/tskt.svg",
+    alt: "Tskt",
   },
   {
-    imgSrc: "/partner3.svg",
-    alt: "partner3",
+    imgSrc: "/partners/GlobalLogic.svg",
+    alt: "GlobalLogic",
   },
   {
-    imgSrc: "/partner4.svg",
-    alt: "partner4",
+    imgSrc: "/partners/Leobit.svg",
+    alt: "Leobit",
   },
   {
-    imgSrc: "/partner5.svg",
-    alt: "partner5",
+    imgSrc: "/partners/Sombra.svg",
+    alt: "Sombra",
   },
   {
-    imgSrc: "/partner6.svg",
-    alt: "partner6",
+    imgSrc: "/partners/SiTime.svg",
+    alt: "SiTime",
   },
   {
-    imgSrc: "/partner7.svg",
-    alt: "partner7",
+    imgSrc: "/partners/Lionwood.svg",
+    alt: "Lionwood",
   },
   {
-    imgSrc: "/partner8.svg",
-    alt: "partner8",
+    imgSrc: "/partners/osfdigital.svg",
+    alt: "osfdigital",
   },
   {
-    imgSrc: "/partner9.svg",
-    alt: "partner9",
+    imgSrc: "/partners/qubstudio.svg",
+    alt: "qubstudio",
   },
   {
-    imgSrc: "/partner10.svg",
-    alt: "partner10",
+    imgSrc: "/partners/DataArt.svg",
+    alt: "DataArt",
   },
   {
-    imgSrc: "/partner11.svg",
-    alt: "partner11",
+    imgSrc: "/partners/Comptools.svg",
+    alt: "Comptools",
   },
   {
-    imgSrc: "/partner12.svg",
-    alt: "partner12",
+    imgSrc: "/partners/Ukeess.svg",
+    alt: "Ukeess",
   },
   {
-    imgSrc: "/partner13.svg",
-    alt: "partner13",
+    imgSrc: "/partners/Keepit.svg",
+    alt: "keepit",
   },
   {
-    imgSrc: "/partner14.svg",
-    alt: "partner14",
+    imgSrc: "/partners/keenethics.svg",
+    alt: "keenethics",
   },
 ];
 
@@ -74,21 +74,21 @@ const Partner = ({
       alt={alt}
       height={128}
       width={208}
-      className="h-32 w-52 hover:scale-105 transition-all duration-500"
+      className="h-32 hover:scale-105 transition-all duration-500"
     />
   );
 };
 
 export default function Partners() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center max-w-7xl w-full px-6 mx-auto gap-8 lg:gap-14">
+    <section className="min-h-screen flex flex-col items-center justify-center max-w-7xl w-full px-6 mx-auto gap-8 lg:gap-14 mt-20">
       <h2
         className={`${press_start.className} text-hack-green text-2xl lg:text-4xl my-2 text-center`}
       >
         Наші партнери
       </h2>
 
-      <div className="gap-5 flex flex-wrap w-full justify-center">
+      <div className="gap-10 flex flex-wrap w-full justify-center">
         {partnersData.map((p, index) => (
           <Partner imgSrc={p.imgSrc} alt={p.alt} />
         ))}
