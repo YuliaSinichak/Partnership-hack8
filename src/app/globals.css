@@ -45,19 +45,19 @@
 
 @keyframes rotateAndBounce {
   0% {
-    transform: rotate(0deg) translateY(1%);
+    transform: rotate(0deg) translateY(0%);
   }
   25% {
-    transform: rotate(-30deg) translateY(-15%);
+    transform: rotate(-30deg) translateY(-15%)translateX(-5%);
   }
   50% {
-    transform: rotate(-45deg) translateY(-15%) translateX(-10%);
+    transform: rotate(-45deg) translateY(-0%) translateX(-20%);
   }
   75% {
-    transform: rotate(-30deg) translateY(5%) translateX(-1%);
+    transform: rotate(-30deg) translateY(-15%)translateX(-5%);
   }
   100% {
-    transform: rotate(0deg) translateY(1%);
+    transform: rotate(0deg) translateY(0%);
   }
 }
 
