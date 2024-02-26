@@ -6,8 +6,9 @@ import useSmoothScrollTo from "@/hooks/useSmoothScrollTo";
 
 export default function Hero() {
   const handleScrollClick = useSmoothScrollTo();
+
   return (
-    <section className="min-h-screen overflow-hidden w-full flex flex-col mt-32" id="top">
+    <section className="min-h-screen relative w-full flex flex-col mt-32" id="top">
       <div className="flex flex-col lg:flex-row  items-center lg:items-end ">
         <div className="flex mx-auto items-center self-center lg:self-start p-6 overflow-hidden">
           <Image
@@ -15,7 +16,7 @@ export default function Hero() {
             height={700}
             width={700}
             alt="hero logo"
-            className="lg:absolute bottom-24 left-24 mx-5 w-5xl z-20 "
+            className="lg:absolute bottom-64 left-24 mx-5 w-5xl z-20 pointer-events-none "
           />
         </div>
         <div className="flex flex-col mx-2 lg:mx-20 text-hack-green  text-center lg:text-right gap-3">
@@ -31,10 +32,11 @@ export default function Hero() {
           
           <button
             onClick={() => handleScrollClick("#offers")}
-            className={`${press_start.className} flex self-end border-2 border-hack-green lg:py-[1.4vw] px-2 lg:px-[1.6vw] rounded-lg leading-none max-w-xs text-center w-full text-hack-green backdrop-blur-sm hover:scale-105 transition-all duration-500 relative z-30 xl:flex top-[1vw] justify-center`}
+            className={`${press_start.className} flex self-center lg:self-end border-2 border-hack-green py-4 lg:py-[1.4vw] px-2 lg:px-[1.6vw] rounded-lg leading-none max-w-xs text-center w-full text-hack-green backdrop-blur-sm hover:scale-105 transition-all duration-500 relative z-30 xl:flex top-[1vw] justify-center`}
           >
             Стати партнером
           </button>
+          <div className="max-w-screen-2xl overflow-hidden">
           <Image
                 src="/Elipse.png"
                 width={1000}
@@ -68,15 +70,17 @@ export default function Hero() {
                 width={500}
                 height={500}
                 alt=" "
-                className="absolute -left-24 bottom-0 opacity-30 lg:opacity-70 blur-sm lg:blur-none max-w-lg pointer-events-none levitate-bubbles1 rotate-45 z-30 overflow-hidden"
+                className="hidden md:flex absolute -left-24 bottom-0 opacity-30 lg:opacity-70 blur-sm lg:blur-none max-w-lg pointer-events-none levitate-bubbles1 rotate-45 z-30 overflow-hidden"
             />
             <Image
                 src="/BubblesPart2.png"
                 width={500}
                 height={500}
                 alt=" "
-                className="absolute -left-16 bottom-0 opacity-30 lg:opacity-70 blur-xs lg:blur-none max-w-lg pointer-events-none levitate-bubbles2 rotate-45 z-30 overflow-hidden"
+                className="hidden md:flex absolute -left-16 bottom-0 opacity-30 lg:opacity-70 blur-xs lg:blur-none max-w-lg pointer-events-none levitate-bubbles2 rotate-45 z-30 overflow-hidden"
             />
+          </div>
+         
         </div>
       </div>
       <Image
@@ -84,7 +88,7 @@ export default function Hero() {
         width={50}
         height={50}
         alt="arrow"
-        className="absolute cursor-pointer animate-bounce w-12 h-12 m-3 self-center bottom-0 z-40"
+        className="lg:absolute cursor-pointer animate-bounce w-12 h-12 m-10 lg:m-3 self-center bottom-32 z-40"
         onClick={() => handleScrollClick("#about")}
       />
     </section>

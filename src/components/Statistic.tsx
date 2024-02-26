@@ -9,7 +9,7 @@ import {
 
 export default function Statistic() {
   return (
-    <div className=" flex flex-col w-auto p-4 lg:p-21 mx-5 lg:mx-10 justify-center">
+    <div className=" flex flex-col w-auto p-4 lg:p-21 mx-5 my-20 lg:mx-10 justify-center">
       <h1
         className={` ${press_start.className} flex text-3xl lg:text-5xl text-hack-green my-12 self-center`}
       >
@@ -57,7 +57,7 @@ export default function Statistic() {
                 width={200}
                 height={200}
                 alt=" "
-                className="absolute -right-16 -bottom-12 pointer-events-none z-20 levitate-bubbles2 "
+                className="absolute -right-16 -bottom-24 md:-bottom-12 pointer-events-none z-20 levitate-bubbles2 "
             />
           
           <h2

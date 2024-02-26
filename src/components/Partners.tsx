@@ -19,7 +19,7 @@ const partnersData = [
     alt: "Leobit",
   },
   {
-    imgSrc: "/partners/Sombra.svg",
+    imgSrc: "/partners/sombra.svg",
     alt: "Sombra",
   },
   {
@@ -51,7 +51,7 @@ const partnersData = [
     alt: "Ukeess",
   },
   {
-    imgSrc: "/partners/Keepit.svg",
+    imgSrc: "/partners/keepit.svg",
     alt: "keepit",
   },
   {
