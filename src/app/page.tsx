@@ -10,6 +10,7 @@ import Partners from "@/components/Partners";
 import Statistic from "@/components/Statistic";
 import Feedbacks from "@/components/Feedbacks";
 import Portrait from "@/components/Portrait";
+import Visitors from "@/components/Visitors";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ForCompany />
       <Statistic />
       <Portrait />
+      <Visitors />
       <PartnershipSection />
 
       <Partners />
