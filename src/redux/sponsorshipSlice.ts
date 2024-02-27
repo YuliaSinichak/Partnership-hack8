@@ -10,8 +10,8 @@ const sellingPoints: iSellingPoint[] = [
         price: 300,
         annotation: '',
         services: [
-            `Логотип компанії на банері та на сайті проєкту`,
-            `Промоція в соціальних мережах`,
+            `Логотип компанії на бренд-волл та на сайті проєкту`,
+            `Промоція в соціальних мережах (інформація про компанію)`,
             `Логотип та згадка про компанію у постпроєктному відео`,
             `Участь у нетворкінгу`
         ]
@@ -21,7 +21,7 @@ const sellingPoints: iSellingPoint[] = [
         active: false,
         name: 'Preceptor',
         price: 700,
-        annotation: "3 left",
+        annotation: "4 залишилось",
         services: [
             'Можливість залучення судді та/або ментора до змагань',
             `Можливість провести воркшоп або тренінг серед учасників`,
@@ -34,7 +34,7 @@ const sellingPoints: iSellingPoint[] = [
         active: false,
         name: 'AdVantage',
         price: 300,
-        annotation: '',
+        annotation: '4 залишилось',
         services: [
             `World cafe`,
             `Інтерактивні Instagram story`,

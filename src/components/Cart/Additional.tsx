@@ -110,7 +110,7 @@ export default function Offers() {
         width={1000}
         height={1000}
         alt=" "
-        className="absolute self-center -top-64 opacity-100 pointer-events-none z-0"
+        className="hidden lg:flex absolute self-center -top-64 opacity-100 pointer-events-none z-0"
       />
       <div className="flex flex-wrap justify-center border bg-black border-hack-green rounded-xl w-full z-10">
         {options.map((option) => {

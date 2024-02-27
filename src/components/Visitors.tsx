@@ -63,66 +63,6 @@ const dataLang = {
     ]
 };
 
-const doughnutLabelLines = {
-    id: 'doughnutsLabelLine',
-    afterDraw(chart, args, options){
-        const { ctx, chartArea: {top, bottom, left, right, width, height} } = chart;
-        
-        chart.data.datasets.forEach((dataset, i) => {
-            chart.getDatasetMeta(i).data.forEach((datapoint, index) => {
-                const { x, y } = datapoint.tooltipPosition();
-                
-
-                //ctx.fillStyle = dataset.backgroundColor[index];
-                //ctx.fill();
-                //ctx.fillRect(x, y, 50, 50);
-
-                const halfheight = height / 2;
-                const halfwidth = width / 2;
-
-                const xLine = x >= halfwidth ? x + 15 : x - 15;
-                const yLine = y >= halfheight ? y + 15 : y - 15;
-                const extraLine = x >= halfwidth ? 15 : -15;
-
-                ctx.beginPath();
-                ctx.MoveTo(x, y);
-                ctx.lineTo( xLine , yLine)
-                ctx.lineTo( xLine + extraLine, yLine)
-                ctx.strokeStyle = dataset.backgroundColor[index];
-                ctx.stroke();
-
-                const textWidth = ctx.mesureText(chart.data.labels[index]).width;
-                ctx.font = '15 px Inter';
-
-                const textPosition = x >= halfwidth ? 'left' : 'right';
-                const plusFivePx = x >= halfwidth ? 5 : -5;
-                ctx.textAlign = textPosition;
-                ctx.textBaseline = 'middle';
-                ctx.fillStyle = dataset.backgroundColor[index];
-                ctx.fillText(chart.data.labels[index], xLine + extraLine + plusFivePx, yLine)
-            })
-        })
-    }
-   
-}
-
-const config ={
-    type: 'doughnut',
-    options:{
-        layout: {
-            padding: 20
-        },
-        maintainAspectRatio: false,
-        plugins:{
-            legend:{
-                display:false
-            }
-        }
-    },
-    plugins: [doughnutLabelLines]
-        
-
-}
 
 export default function Visitors(){
     return (
