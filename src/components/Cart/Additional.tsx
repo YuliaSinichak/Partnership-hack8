@@ -16,19 +16,29 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 const explanation: dataItem[] = [
   {
-    heading: "Лого на плакатах",
+    heading: "Розсилка вакансій у Telegram боті",
     details:
-      "Плакати про подію будуть розповсюджені на території кампусу та студмістечка.",
+      "Піврічна розсилка вакансій та активностей(курсів, стажувань) від компанії у Telegram боті.",
   },
   {
-    heading: "Логотип на футболках",
+    heading: "Розміщення банера компаній під час Хакатону",
     details:
-      "Проєкт буде мати свій мерч, який поширюватиметься серед учасників змагання та осередку BEST Lviv. Ми розмістимо лого Вашої компанії на спині футболок.",
+      " ",
   },
   {
-    heading: "Розсилка вакансій в телеграм боті",
+    heading: "Доступ до бази CV учасників",
     details:
-      "Проєкт буде мати свого бота в телеграмі для реєстрації команд учасників (зможливістью прикріпити своє CV), розсилки важливої інформації та комунікації під час заходу.",
+      "Це можливість отримати доступ до бази даних CV учасників, що пройшли відбір на хакатон.",
+  },
+  {
+    heading: "Номінація від компанії",
+    details:
+      "Ви можете обрати власну номінацію на змаганнях, яка буде закріплена за Вашою компанією. Ви визначаєте у ній переможця та нагороджуєте призом. Номінація може стосуватись використання певних технологій або інших особливостей роботи команди на Ваш вибір.",
+  },
+  {
+    heading: "Участь у креативній загадці «Define solution»",
+    details:
+      "завдання на декілька рівнів, яке потенційні учасники проєкту розв’язуватимуть самостійно. Загадка розпочнеться за місяць до проєкту, під час реєстрації учасників, і триватиме до початку Хакатону. Завдання буде формуватися вашою компанією з допомогою нашої команди та буде націлено на пошук перспективних ініціативних студентів, що володіють важливими для Вас навичками. Ви зможете ознайомитися із CV переможців, зв’язатися з ними, а також на закритті змагань нагородити їх своїм мерчем.",
   },
 ];
 
@@ -89,13 +99,20 @@ export default function Offers() {
   const options = useSelector((state: RootState) => state.optionalPackets);
 
   return (
-    <section className="flex flex-col items-center justify-center px-6 mx-auto w-full max-w-5xl gap-8 my-12">
+    <section className=" relative flex flex-col items-center justify-center px-6 mx-auto w-full max-w-5xl gap-8 my-12">
       <h2
-        className={`${press_start.className} text-4xl md:text-4xl mt-16 text-hack-green  text-center`}
+        className={`${press_start.className} text-4xl md:text-4xl mt-16 text-hack-green  text-center z-10`}
       >
         Додаткові Опції
       </h2>
-      <div className="flex flex-wrap justify-center border border-hack-green rounded-xl w-full">
+      <Image
+        src="/Elipse.png"
+        width={1000}
+        height={1000}
+        alt=" "
+        className="absolute self-center -top-64 opacity-100 pointer-events-none z-0"
+      />
+      <div className="flex flex-wrap justify-center border bg-black border-hack-green rounded-xl w-full z-10">
         {options.map((option) => {
           return <Option key={option.name} {...option} />;
         })}

@@ -4,27 +4,27 @@ import { iOptional } from "@/types";
 
 const options: iOptional[] = [
   {
-    name: "Участь у креативній загадці «Define solution»",
+    name: "Розсилка вакансій у Telegram боті",
     active: false,
     price: 150,
   },
   {
-    name: "Розсилка вакансій в телеграм боті",
+    name: "Розміщення банера компаній під час Хакатону",
+    active: false,
+    price: 80,
+  },
+  {
+    name: "Доступ до бази CV учасників",
     active: false,
     price: 80,
   },
   {
     name: "Номінація від компанії",
     active: false,
-    price: 80,
-  },
-  {
-    name: "Розміщення банера компаній під час хакатону",
-    active: false,
     price: 60,
   },
   {
-    name: "Доступ до бази CV учасників",
+    name: "Участь у креативній загадці «Define solution»",
     active: false,
     price: 60,
   },

@@ -29,7 +29,7 @@ const Modal = ({ handleModal }: ModalProps) => {
           className="absolute top-10 lg:top-16 right-4 lg:right-10 w-8 h-8"
         />
       </button>
-      <div className="grid grid-cols border border-hack-green rounded-lg p-4 lg:p-10 bg-neutral-900">
+      <div className="grid grid-cols border border-hack-green rounded-lg p-4 lg:p-10 bg-black">
         {modalData.map((md) => (
           <>
             <p
