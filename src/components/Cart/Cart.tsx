@@ -103,9 +103,10 @@ export default function Cart() {
     0
   );
 
-  const isDiscount = activeSellingPoints.length == 3;
+  const isDiscount = ( activeSellingPoints.length == 2 || activeSellingPoints.length == 3 || activeOptionalPoints.length == 4)
   const totalSum =
-    (isDiscount ? 0.9 : 1) * selligPointsPriceSum + activeOptionsPriceSum;
+    (activeSellingPoints.length == 2 || activeOptionalPoints.length == 4) ? selligPointsPriceSum + activeOptionsPriceSum - 50 : (activeSellingPoints.length == 3) ? selligPointsPriceSum + activeOptionsPriceSum - 150: selligPointsPriceSum + activeOptionsPriceSum ;
+    
 
   const handleForm = (result: any) => {
     console.log({
