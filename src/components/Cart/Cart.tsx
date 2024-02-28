@@ -236,7 +236,7 @@ export default function Cart() {
               </button>
             </div>
           </form>
-          <div className="flex flex-col relative z-20 justify-center items-start text-left ">
+          <div className="flex flex-col relative z-20 justify-center items-center text-left ">
             <p className={`${inter.className} text-sm md:text-lg text-gray-300`}>Партнерам попередніх проєктів <span className="text-hack-green">-5%</span></p>
             <div className="grid grid-col text-sm md:text-lg text-gray-300">
                 <p className={`${inter.className}`}>Базовий + 4 додаткові опції <span className="text-hack-green">-50$</span></p>
