@@ -12,14 +12,14 @@ export default function Portrait() {
                 width={500}
                 height={500}
                 alt=" "
-                className="absolute -left-32 opacity-30 lg:opacity-100 blur-sm lg:blur-none max-w-lg pointer-events-none levitate-bubbles1"
+                className="absolute -left-32 bottom-16 opacity-30 lg:opacity-100 blur-sm lg:blur-none max-w-lg pointer-events-none levitate-bubbles1"
             />
             <Image
                 src="/BubblesPart2.png"
                 width={500}
                 height={500}
                 alt=" "
-                className="absolute -left-28 opacity-30 lg:opacity-100 blur-xs lg:blur-none max-w-lg pointer-events-none levitate-bubbles2"
+                className="absolute -left-28 bottom-8 opacity-30 lg:opacity-100 blur-xs lg:blur-none max-w-lg pointer-events-none levitate-bubbles2"
             />
 
             <Image

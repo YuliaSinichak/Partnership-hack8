@@ -9,19 +9,19 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen relative w-full flex flex-col mt-32" id="top">
-      <div className="flex flex-col lg:flex-row  items-center lg:items-end ">
-        <div className="flex mx-auto items-center self-center lg:self-start p-6 overflow-hidden">
+      <div className="flex flex-col xl:flex-row">
+        <div className="flex mx-auto  p-6">
           <Image
             src="/BenyaHero.png"
             height={700}
             width={700}
             alt="hero logo"
-            className="lg:absolute bottom-64 left-24 mx-5 w-5xl z-20 pointer-events-none "
+            className="mx-5 w-5xl z-20"
           />
         </div>
-        <div className="flex flex-col mx-2 lg:mx-20 text-hack-green  text-center lg:text-right gap-3">
+        <div className="flex flex-col mx-5 text-hack-green self-center xl:self-center text-center xl:text-right gap-3">
           <p className={`${press_start.className}`}>
-            Тема: мілітарі (військова)
+            Тема: military (військова)
           </p>
           <h1
             className={`${press_start.className} align-top items-center text-xl lg:text-5xl`}
@@ -32,7 +32,7 @@ export default function Hero() {
           
           <button
             onClick={() => handleScrollClick("#offers")}
-            className={`${press_start.className} flex self-center lg:self-end border-2 border-hack-green py-4 lg:py-[1.4vw] px-2 lg:px-[1.6vw] rounded-lg leading-none max-w-xs text-center w-full text-hack-green backdrop-blur-sm hover:scale-105 transition-all duration-500 relative z-30 xl:flex top-[1vw] justify-center`}
+            className={`${press_start.className} flex self-center xl:self-end border-2 border-hack-green py-4 lg:py-[1.4vw] px-2 lg:px-[1.6vw] rounded-lg leading-none max-w-xs text-center w-full text-hack-green backdrop-blur-sm hover:scale-105 transition-all duration-500 relative z-30 xl:flex top-[1vw] justify-center`}
           >
             Стати партнером
           </button>
@@ -42,7 +42,7 @@ export default function Hero() {
                 width={1000}
                 height={1000}
                 alt=" "
-                className="hidden lg:flex lg:absolute -right-64 top-24 max-w-3xl pointer-events-none z-0 rotate-45 overflow-hidden"
+                className="hidden lg:flex absolute -right-64 top-24 max-w-3xl pointer-events-none z-0 rotate-45 overflow-hidden"
             />
           <Image
                 src="/BubblesPart1.png"
@@ -88,7 +88,7 @@ export default function Hero() {
         width={50}
         height={50}
         alt="arrow"
-        className="lg:absolute cursor-pointer animate-bounce w-12 h-12 m-10 lg:m-3 self-center bottom-32 z-40"
+        className="xl:absolute cursor-pointer animate-bounce w-12 h-12 m-10 xl:m-3 self-center bottom-32 z-40"
         onClick={() => handleScrollClick("#about")}
       />
     </section>

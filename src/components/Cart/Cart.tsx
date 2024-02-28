@@ -157,7 +157,8 @@ export default function Cart() {
   });
 
   return (
-    <section className="flex flex-col items-center justify-center w-full gap-8 p-8 my-10 self-center">
+    <section className=" relative grid grid-cols-3 lg:grid-row items-center justify-center w-full gap-8 p-8 my-10 lg:mx-24 self-center">
+      <div className="grid col-span-2">
       <h2
         className={`${press_start.className} text-hack-green text-3xl md:text-5xl my-16 text-center`}
       >
@@ -166,7 +167,7 @@ export default function Cart() {
       <div className="mx-auto w-full max-w-5xl">
         <div className="col-span-1 flex flex-col gap-5">
           <form
-            className="border rounded-xl lg:py-6 lg:px-14 px-4 py-4 flex flex-col md:flex-row gap-4 lg:gap-10"
+            className="border rounded-xl backdrop-blur-lg lg:py-6 lg:px-14 px-4 py-4 flex flex-col md:flex-row gap-4 lg:gap-10"
             onSubmit={formik.handleSubmit}
           >
             <div className="col-span-2 max-w-lg mx-auto w-full flex flex-col justify-between gap-5">
@@ -236,6 +237,46 @@ export default function Cart() {
           </form>
         </div>
       </div>
+      </div>
+      <div className=" z-0 w-full flex flex-col col-span-1 items-center justify-center">
+            <Image
+                src="/BubblesPart1.png"
+                width={500}
+                height={500}
+                alt=" "
+                className="absolute -left-32 opacity-30 blur-sm lg:blur-none pointer-events-none levitate-bubbles1 z-0"
+            />
+            <Image
+                src="/BubblesPart2.png"
+                width={500}
+                height={500}
+                alt=" "
+                className="absolute -left-28 opacity-30 lg:blur-none pointer-events-none levitate-bubbles2 z-0"
+            />
+            <Image
+                src="/BubblesPart1.png"
+                width={500}
+                height={500}
+                alt=" "
+                className="absolute -right-32 opacity-30 blur-sm lg:blur-none pointer-events-none levitate-bubbles1 rotate-45 z-0"
+            />
+            <Image
+                src="/BubblesPart2.png"
+                width={500}
+                height={500}
+                alt=" "
+                className="absolute -right-28 opacity-30 lg:blur-none pointer-events-none levitate-bubbles2 rotate-45 z-0"
+            />
+            <div className="flex flex-col relative z-20 justify-center items-center lg:items-start lg:text-left text-center">
+            <h1 className={`${press_start.className} text-xl lg:text-3xl text-hack-green`} >Знижки</h1>
+            <p className={`${inter.className} text-2xl m-2`}><span className="text-hack-green">-5%</span> партнерам попередніх проєктів</p>
+            <div className="grid grid-col text-lg">
+                <p className={`${inter.className}`}>базовий + 4 додаткові опції <span className="text-hack-green">-50$</span></p>
+                <p className={`${inter.className}`}>базовий + один пакет <span className="text-hack-green">-50$</span></p>
+                <p className={`${inter.className}`}>базовий + два пакети <span className="text-hack-green">-150$</span></p>
+            </div>
+            </div>
+        </div>
     </section>
   );
 }

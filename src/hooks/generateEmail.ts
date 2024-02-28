@@ -23,7 +23,7 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
           "
         >
           <img
-            src="https://drive.google.com/uc?export=download&id=1AjoqTSezC_h3bpMgqbDkrGskUM1HkIRS"
+            src="https://drive.google.com/uc?export=download&id=19PzYMmn6BrE8DWkf0RZOu3sbQ6qsvlPd"
             alt="logo"
             style="width: 80%; margin: 0 auto;"
           />
@@ -39,15 +39,15 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
     >
       <tr>
         <td align="center" style="padding: 20px">
-          <h1 style="color: #f5a020">Вітаємо, ${name}!</h1>
+          <h1 style="color: #3BAF0B">Вітаємо, ${name}!</h1>
           <p style="color: #262626">
-            Ви на крок ближче до участі в BEC 2023 в ролі партнера!
+            Ви на крок ближче до участі в BEST::Hackath0n'8 в ролі партнера!
           </p>
         </td>
       </tr>
       <tr>
         <td style="max-width: 560px; margin: 0 auto">
-          <hr style="border: 2px solid #f5a020" />
+          <hr style="border: 2px solid #3BAF0B" />
         </td>
       </tr>
     </table>
@@ -60,20 +60,20 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
     >
       <tr>
         <td style="padding: 20px">
-          <h2 style="color: #f5a020">
+          <h2 style="color: #3BAF0B">
             Ваш вибір опцій співпраці виглядає так:
           </h2>
           <table cellpadding="10" cellspacing="0" width="100%">
             <tr>
               <th
-                style="text-align: left; background-color: #f5a020; color: #fff"
+                style="text-align: left; background-color: #3BAF0B; color: #fff"
               >
                 Назва пакету
               </th>
               <th
                 style="
                   text-align: right;
-                  background-color: #f5a020;
+                  background-color: #3BAF0B;
                   color: #fff;
                 "
               >
@@ -98,14 +98,14 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
     <table cellpadding="10" cellspacing="0" width="100%">
       <tr>
         <th
-          style="text-align: left; background-color: #f5a020; color: #fff"
+          style="text-align: left; background-color: #3BAF0B; color: #fff"
         >
           Назва опції
         </th>
         <th
           style="
                   text-align: right;
-                  background-color: #f5a020;
+                  background-color: #3BAF0B;
                   color: #fff;
                 "
         >
@@ -150,18 +150,17 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
       <tr>
         <td style="padding: 20px">
           <p style="color: #262626">
-            1. При купівлі одразу 3-х пакетів надається знижка в розмірі 10%.
+            1. При купівлі одразу 2-х пакетів надається знижка -50$.
           </p>
           <p style="color: #262626">
-            2. Для компаній-партнерів EBEC’2020 надається знижка в розмірі 5% на
+            2. При купівлі одразу 3-х пакетів надається знижка -150$.
+          </p>
+          <p style="color: #262626">
+            3. При купівлі одразу 1 пакета та 4 додаткових опцій надається знижка -50$.
+          </p>
+          <p style="color: #262626">
+            4. Для компаній-партнерів Hackath0n'7 надається знижка в розмірі 5% на
             всі пропозиції.
-          </p>
-          <p style="color: #262626">
-            3. Усім партнерам, що працюють у сфері military, military-tech
-            знижка 10%.
-          </p>
-          <p style="color: #262626; font-weight: 600">
-            * Знижки не поєднуються.
           </p>
 
           <p style="color: #262626">
@@ -173,11 +172,11 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
             style="
               text-align: right;
               margin-top: 20px;
-              color: #f5a020;
+              color: #3BAF0B;
               font-weight: 600;
             "
           >
-            До зустрічі на BEC'2023!
+            До зустрічі на Hackath0n'8!
           </p>
         </td>
       </tr>
@@ -191,31 +190,31 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
     >
       <tr>
         <td style="padding: 20px">
-          <p style="color: #262626">Мороз Вероніка,</p>
+          <p style="color: #262626">Марія Зарванська,</p>
           <p style="color: #262626">відповідальна за корпоративні зв’язки</p>
 
           <p>
-            <a style="color: #262626" href="tel:+ 380 63 870 61 97">
-              + 380 63 870 61 97
+            <a style="color: #262626" href="tel:+ 380 99 132 37 49">
+             + 380 99 132 37 49
             </a>
           </p>
           <p>
-            <a style="color: #262626" href="mailto:veronika.moroz@best-eu.org">
-              veronika.moroz@best-eu.org
+            <a style="color: #262626" href="mailto:mariia.zarvanska@best-eu.org">
+               mariia.zarvanska@best-eu.org
             </a>
           </p>
         </td>
         <td style="padding: 20px">
-          <p style="color: #262626">Гаврилко Андрій,</p>
+          <p style="color: #262626">Шестак Ілля,</p>
           <p style="color: #262626">відповідальний за корпоративні зв’язки</p>
           <p>
-            <a style="color: #262626" href="tel:+ +380 97 507 24 52">
-              +380 97 507 24 52
+            <a style="color: #262626" href="tel:+ 380 66 665 84 31">
+              + 380 66 665 84 31
             </a>
           </p>
           <p>
-            <a style="color: #262626" href="mailto:andriy.havrylko@best-eu.org">
-              andriy.havrylko@best-eu.org
+            <a style="color: #262626" href="mailto:illia.shestak.best@gmail.com">
+              illia.shestak.best@gmail.com
             </a>
           </p>
         </td>

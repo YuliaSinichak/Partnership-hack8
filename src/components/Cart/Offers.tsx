@@ -165,7 +165,7 @@ const Card = ({
           </h5>
           <button
             className={`${press_start.className} ${
-              compulsory ? "cursor-not-allowed" : "cursor-auto"
+              compulsory ? "cursor-auto" : "cursor-auto"
             } text-xl md:text-xl bg-black rounded-xl border-2 w-fit border-hack-green text-hack-green px-4 lg:px-10 py-2 self-center`}
           >{`${price}$`}</button>
         </div>
@@ -176,7 +176,7 @@ const Card = ({
             </li>
           ))}
         </div>
-        <div className="flex flex-row justify-between items-end md:gap-4 gap-1">
+        <div className="flex flex-row justify-between items-end md:gap-4 gap-1 z-20">
           <button
             onClick={() => {
               handleModal({ name, modalData: explanation[name] as any });
@@ -235,19 +235,19 @@ export default function Offers() {
        />
        <Image
           src="/BenyaOffers.png"
-          width={700}
-          height={700}
+          width={600}
+          height={600}
           alt=" "
-          className="hidden lg:flex absolute -right-4 bottom-64 pointer-events-none z-10 levitate-bubbles2"
+          className="hidden lg:flex absolute -right-4 bottom-64 pointer-events-none z-10 levitate-bubbles2 z-0"
        />
        <Image
           src="/Hearts.png"
           width={300}
           height={300}
           alt=" "
-          className="hidden lg:flex absolute right-80 bottom-24 pointer-events-none z-0 levitate-bubbles2"
+          className="hidden lg:flex absolute right-80 bottom-24 pointer-events-none z-0 levitate-bubbles1"
        />
-      <div className="flex flex-col items-center justify-center gap-4">
+      <div className="flex flex-col self-center items-center justify-center gap-4 z-20">
         {sellingPoints.map((sp) => {
           return <Card key={sp.name} handleModal={handleModal} {...sp} />;
         })}

@@ -1,3 +1,5 @@
+import { inter } from "@/app/fonts";
+
 export interface iSellingPoint {
     compulsory: boolean;
     name: 'Basic' | 'Preceptor' | 'AdVantage' | 'LEGO';
@@ -5,6 +7,12 @@ export interface iSellingPoint {
     price: number;
     annotation: string;
     services: string[];
+}
+
+export interface iLego {
+    name: string;
+    active: boolean;
+    id: number;
 }
 
 export interface iOptional {

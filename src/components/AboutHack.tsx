@@ -68,7 +68,7 @@ export default function AboutHack() {
           width={250}
           height={250}
           alt="Benya"
-          className="absolute flex z-50 -bottom-24 -right-24 levitate-bubbles2"
+          className="absolute flex z-40 -bottom-24 -right-24 levitate-bubbles2"
         />
         </div>
 
