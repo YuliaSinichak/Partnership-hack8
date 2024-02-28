@@ -213,8 +213,8 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
             </a>
           </p>
           <p>
-            <a style="color: #262626" href="mailto:illia.shestak.best@gmail.com">
-              illia.shestak.best@gmail.com
+            <a style="color: #262626" href="mailto:illia.shestak@best-eu.org">
+            illia.shestak@best-eu.org
             </a>
           </p>
         </td>

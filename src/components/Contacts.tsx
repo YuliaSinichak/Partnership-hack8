@@ -72,7 +72,7 @@ export default function Contacts() {
         name="Шестак Ілля"
         imageSrc="/Ilia.png"
         phoneNumber="+380666658431"
-        email="illia.shestak@best.eu.org"
+        email="illia.shestak@best-eu.org"
         role="відповідальний за корпоративні зв'язки"
         className="order-1"
       />
