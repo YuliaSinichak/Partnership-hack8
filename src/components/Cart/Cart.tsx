@@ -230,6 +230,7 @@ export default function Cart() {
                 // disabled={!formik.isValid || formik.isSubmitting}
                 className={`${press_start.className} border-2 rounded-xl bg-black border-hack-green hover:scale-105 w-full text-hack-green outline-none px-10 py-4 my-5 self-center text-md`}
                 type="submit"
+                
               >
                 Замовити
               </button>

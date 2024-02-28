@@ -238,7 +238,7 @@ export default function Offers() {
           width={600}
           height={600}
           alt=" "
-          className="hidden lg:flex absolute -right-4 bottom-64 pointer-events-none z-10 levitate-bubbles2 z-0"
+          className="hidden lg:flex absolute -right-4 bottom-64 pointer-events-none levitate-bubbles2 z-0"
        />
        <Image
           src="/Hearts.png"
