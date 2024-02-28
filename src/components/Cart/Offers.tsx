@@ -224,7 +224,7 @@ export default function Offers() {
         <h2 className={`${press_start.className} text-white text-xl`}>10% отриманих коштів підуть на допомогу ЗСУ</h2>
         <p className={`${inter.className} text-gray-500 font-italic text-sm`}>*Оплата буде здійснюватися за курсом НБУ</p>
         <p className={`${inter.className} text-gray-300 my-5`}>Кожен партнер проєкту має змогу долучитись до благодійного збору-розіграшу для ЗСУ в наших соціальних мережах. Серед людей, що задонатять, випадковим чином оберуться переможці, які отримають подарунки від компаній-партнерів.</p>
-        <p className={`${inter.className} text-gray-300`}>Також після успішного завершення хакатону вам надається фото та відеозвіт від організаторів</p>
+        <p className={`${inter.className} text-gray-300`}>Також після успішного завершення хакатону вам надається фото та відеозвіт від організаторів.</p>
       </div>
       <Image
           src="/Elipse.png"

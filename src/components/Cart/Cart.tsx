@@ -158,20 +158,20 @@ export default function Cart() {
   });
 
   return (
-    <section className=" relative grid grid-cols-3 lg:grid-row items-center justify-center w-full gap-8 p-8 my-10 lg:mx-24 self-center">
-      <div className="grid col-span-2">
+    <section className=" relative grid items-center justify-center w-full gap-8 p-8 my-10 lg:mx-24 self-center">
+      <div className="grid">
       <h2
         className={`${press_start.className} text-hack-green text-3xl md:text-5xl my-16 text-center`}
       >
         Кошик
       </h2>
       <div className="mx-auto w-full max-w-5xl">
-        <div className="col-span-1 flex flex-col gap-5">
+        <div className="flex flex-col gap-5">
           <form
-            className="border rounded-xl backdrop-blur-lg lg:py-6 lg:px-14 px-4 py-4 flex flex-col md:flex-row gap-4 lg:gap-10"
+            className="border w-full rounded-xl backdrop-blur-lg lg:py-6 lg:px-14 px-4 py-4 flex flex-col md:flex-row gap-4 lg:gap-10"
             onSubmit={formik.handleSubmit}
           >
-            <div className="col-span-2 max-w-lg mx-auto w-full flex flex-col justify-between gap-5">
+            <div className="max-w-lg mx-auto w-full flex flex-col justify-between gap-5">
               <h3
                 className={`${press_start.className} text-center text-hack-green text-xl`}
               >
@@ -231,12 +231,19 @@ export default function Cart() {
                 // disabled={!formik.isValid || formik.isSubmitting}
                 className={`${press_start.className} border-2 rounded-xl bg-black border-hack-green hover:scale-105 w-full text-hack-green outline-none px-10 py-4 my-5 self-center text-md`}
                 type="submit"
-                
               >
                 Замовити
               </button>
             </div>
           </form>
+          <div className="flex flex-col relative z-20 justify-center items-start text-left ">
+            <p className={`${inter.className} text-sm md:text-lg text-gray-300`}>Партнерам попередніх проєктів <span className="text-hack-green">-5%</span></p>
+            <div className="grid grid-col text-sm md:text-lg text-gray-300">
+                <p className={`${inter.className}`}>Базовий + 4 додаткові опції <span className="text-hack-green">-50$</span></p>
+                <p className={`${inter.className}`}>Базовий + один пакет <span className="text-hack-green">-50$</span></p>
+                <p className={`${inter.className}`}>Базовий + два пакети <span className="text-hack-green">-150$</span></p>
+            </div>
+            </div>
         </div>
       </div>
       </div>
@@ -269,15 +276,6 @@ export default function Cart() {
                 alt=" "
                 className="absolute -right-28 opacity-30 lg:blur-none pointer-events-none levitate-bubbles2 rotate-45 z-0"
             />
-            <div className="flex flex-col relative z-20 justify-center items-center lg:items-start lg:text-left text-center">
-            <h1 className={`${press_start.className} text-xl lg:text-3xl text-hack-green`} >Знижки</h1>
-            <p className={`${inter.className} text-2xl m-2`}><span className="text-hack-green">-5%</span> партнерам попередніх проєктів</p>
-            <div className="grid grid-col text-lg">
-                <p className={`${inter.className}`}>базовий + 4 додаткові опції <span className="text-hack-green">-50$</span></p>
-                <p className={`${inter.className}`}>базовий + один пакет <span className="text-hack-green">-50$</span></p>
-                <p className={`${inter.className}`}>базовий + два пакети <span className="text-hack-green">-150$</span></p>
-            </div>
-            </div>
         </div>
     </section>
   );

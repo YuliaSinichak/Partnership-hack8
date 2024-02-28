@@ -42,17 +42,17 @@ export default function ForCompany() {
           <p
             className={`border rounded-xl border-hack-green px-5 lg:px-10 py-2 z-10 flex items-center justify-center hover:scale-[102%] transition-all duration-500 ${inter.className}`}
           >
-            Підвищення впізнаваності бренду серед студентів.
+            Підвищення впізнаваності бренду серед студентів
           </p>
           <p
             className={`border rounded-xl border-hack-green px-5 lg:px-10 py-2 z-10 flex items-center justify-center hover:scale-[102%] transition-all duration-500 ${inter.className}`}
           >
-            Інвестиція в амбітну й талановиту молодь.
+            Інвестиція в амбітну й талановиту молодь
           </p>
           <p
             className={`border rounded-xl border-hack-green px-5 lg:px-10 py-2 z-10 flex items-center justify-center hover:scale-[102%] transition-all duration-500 ${inter.className}`}
           >
-            Ефективний піар, що спрямований на цільову аудиторію.
+            Ефективний піар, що спрямований на цільову аудиторію
           </p>
         </div>
         <div className="relative flex items-center justify-center">
@@ -85,17 +85,17 @@ export default function ForCompany() {
             className={`border rounded-xl border-hack-green px-5 lg:px-10 py-2 z-10 flex items-center justify-center hover:scale-[102%] transition-all duration-500 ${inter.className}`}
           >
             Можливість відібрати ініціативних студентів із подальшою
-            перспективою працевлаштування.
+            перспективою працевлаштування
           </p>
           <p
             className={`border rounded-xl border-hack-green px-5 lg:px-10 py-2 z-10 flex items-center justify-center hover:scale-[102%] transition-all duration-500 ${inter.className}`}
           >
-            Підтримка Збройних сил України.
+            Підтримка Збройних сил України
           </p>
           <p
             className={`border rounded-xl border-hack-green px-5 lg:px-10 py-2 z-10 flex items-center justify-center hover:scale-[102%] transition-all duration-500 ${inter.className}`}
           >
-            Можливість знайти креативні рішення проблем у сфері military.
+            Можливість знайти креативні рішення проблем у сфері military
           </p>
         </div>
       </div>

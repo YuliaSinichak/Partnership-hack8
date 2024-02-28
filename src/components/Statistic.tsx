@@ -57,7 +57,7 @@ export default function Statistic() {
                 width={200}
                 height={200}
                 alt=" "
-                className="absolute -right-16 -bottom-24 md:-bottom-12 pointer-events-none z-20 levitate-bubbles2 "
+                className="absolute -right-16 -bottom-36 md:-bottom-12 pointer-events-none z-20 levitate-bubbles2 "
             />
           
           <h2
