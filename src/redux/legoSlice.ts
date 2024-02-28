@@ -57,16 +57,16 @@ const legoPointsSlice = createSlice({
   name: "lego",
   initialState,
   reducers: {
-    toggleOptionActive: (state, action: PayloadAction<{ name: string }>) => {
+    togglePointActive: (state, action: PayloadAction<{ name: string }>) => {
       const { name } = action.payload;
-      const option = state.find((sp) => sp.name === name);
-      if (option) {
-        option.active = !option.active;
+      const point = state.find((sp) => sp.name === name);
+      if (point) {
+        point.active = !point.active;
       }
     },
   },
 });
 
-export const { toggleOptionActive } = legoPointsSlice.actions;
+export const { togglePointActive } = legoPointsSlice.actions;
 
 export default legoPointsSlice.reducer;

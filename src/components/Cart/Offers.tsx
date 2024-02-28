@@ -153,20 +153,20 @@ const Card = ({
           e.stopPropagation();
           handleTogglePacket();
         }}
-        className={`cursor-pointer rounded-2xl w-full backdrop-blur-lg bg-black bg-opacity-30 flex flex-col border-grey justify-between gap-3 md:gap-5 p-4 lg:p-8 border-2 ${
+        className={`cursor-pointer rounded-2xl w-full backdrop-blur-lg bg-black bg-opacity-30 flex flex-col border-grey justify-between gap-3 md:gap-5 p-8 lg:p-8 border-2 ${
           active ? "border-hack-green " : "border-neutral-500"
         }`}
       >
-        <div className="flex w-full justify-between items-start max-w-xl">
+        <div className="flex w-full justify-between items-start max-w-xl ">
           <h5
-            className={`${press_start.className} text-xl md:text-4xl self-center`}
+            className={`${press_start.className} text-xl md:text-3xl self-center`}
           >
             {name}
           </h5>
           <button
             className={`${press_start.className} ${
               compulsory ? "cursor-auto" : "cursor-auto"
-            } text-xl md:text-xl bg-black rounded-xl border-2 w-fit border-hack-green text-hack-green px-4 lg:px-10 py-2 self-center`}
+            } text-lg md:text-xl bg-black rounded-xl border-2 w-fit border-hack-green text-hack-green px-4 lg:px-10 py-2 self-center ml-5`}
           >{`${price}$`}</button>
         </div>
         <div className="w-full">
@@ -176,7 +176,7 @@ const Card = ({
             </li>
           ))}
         </div>
-        <div className="flex flex-row justify-between items-end md:gap-4 gap-1 z-20">
+        <div className="flex flex-row-reverse justify-between items-end md:gap-4 gap-1 z-20">
           <button
             onClick={() => {
               handleModal({ name, modalData: explanation[name] as any });
@@ -191,7 +191,7 @@ const Card = ({
             />
           </button>
           {annotation && (
-            <span className="text-white bg-black border border-white text-ms md:text-md md:py-3 py-1.5 md:px-4 px-2 rounded-lg h-fit">
+            <span className="text-gray-400 bg-black border border-gray-400 text-xs md:text-md md:py-3 py-1.5 md:px-4 px-2 rounded-lg h-fit">
               {annotation}
             </span>
           )}

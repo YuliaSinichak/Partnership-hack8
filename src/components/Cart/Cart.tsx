@@ -105,7 +105,7 @@ export default function Cart() {
 
   const isDiscount = ( activeSellingPoints.length == 2 || activeSellingPoints.length == 3 || activeOptionalPoints.length == 4)
   const totalSum =
-    (activeSellingPoints.length == 2 || activeOptionalPoints.length == 4) ? selligPointsPriceSum + activeOptionsPriceSum - 50 : (activeSellingPoints.length == 3) ? selligPointsPriceSum + activeOptionsPriceSum - 150: selligPointsPriceSum + activeOptionsPriceSum ;
+    (activeSellingPoints.length == 3 ) ? selligPointsPriceSum + activeOptionsPriceSum - 150 : (activeSellingPoints.length == 2 || activeOptionalPoints.length == 4) ? selligPointsPriceSum + activeOptionsPriceSum - 50: selligPointsPriceSum + activeOptionsPriceSum ;
     
 
   const handleForm = (result: any) => {
