@@ -6,27 +6,27 @@ const options: iOptional[] = [
   {
     name: "Розсилка вакансій у Telegram боті",
     active: false,
-    price: 150,
+    price: 80,
   },
   {
     name: "Розміщення банера компаній під час Хакатону",
     active: false,
-    price: 80,
+    price: 60,
   },
   {
     name: "Доступ до бази CV учасників",
     active: false,
-    price: 80,
+    price: 60,
   },
   {
     name: "Номінація від компанії",
     active: false,
-    price: 60,
+    price: 80,
   },
   {
     name: "Участь у креативній загадці «Define solution»",
     active: false,
-    price: 60,
+    price: 150,
   },
 ];
 
