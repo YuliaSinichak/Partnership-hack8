@@ -38,7 +38,7 @@ const sellingPoints: iSellingPoint[] = [
         services: [
             `World cafe`,
             `Інтерактивні Instagram story`,
-            `Логотип  на плакатах`,
+            `Логотип на плакатах`,
             `Гра «Treasure hunt»`,
         ]
     },
@@ -47,7 +47,7 @@ const sellingPoints: iSellingPoint[] = [
         active: false,
         name: 'LEGO',
         price: 500,
-        annotation: 'Ви можете обрати 4 будь яких з 9 можливих опцій',
+        annotation: 'Ви можете обрати будь-які 4 опції з 9 можливих',
         services: [
             `World cafe`,
             `Гра «Treasure hunt»`,

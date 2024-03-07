@@ -80,7 +80,7 @@ export default function Contacts() {
         name="Тетяна Панчук"
         imageSrc="/Tetiana.png"
         phoneNumber="+380978077397"
-        email="tetianapanchuk04@gmail.com"
+        email="tetiana.panchuk@best-eu.org"
         role="головна організаторка"
         className="order-first lg:order-1"
       />
