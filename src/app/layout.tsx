@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 import { inter } from "./fonts";
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-neutral-950 text-neutral-100`}>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
