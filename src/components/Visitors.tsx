@@ -5,7 +5,7 @@ import { press_start, inter } from '@/app/fonts'
 import Image from 'next/image'
 import { text } from 'stream/consumers'
 Chart.register(
-    Tooltip, Title, ArcElement
+    Tooltip, Title, ArcElement, Legend
 )
 
 const dataCourses = {

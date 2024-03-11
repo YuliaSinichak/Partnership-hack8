@@ -45,7 +45,7 @@ export default function Portrait() {
                 className="absolute -right-12 bottom-36 w-auto hidden lg:flex z-10 "
                 />
             <div className="flex flex-col gap-4 items-center justify-center self-center ">
-                <div className="border border-hack-green p-10 text-center text-xl rounded-xl w-80 hover:scale-102 backdrop-blur-md">
+                <div className="border border-hack-green p-10 text-center text-xl rounded-xl w-80 hover:scale-102 backdrop-blur-lg">
                     <p className={`${press_start.className}`}>Для кого?</p>
                 </div>
                 <Image
@@ -55,7 +55,7 @@ export default function Portrait() {
                     alt="arrow"
                     className="animate-bounce w-12 h-12 m-3 visible flex self-center"
                 />
-                <div className="border border-hack-green p-10 text-center rounded-xl w-80 hover:scale-102 backdrop-blur-md">
+                <div className="border border-hack-green p-10 text-center rounded-xl w-80 hover:scale-102 backdrop-blur-lg">
                     <p className={`${inter.className}`}>Для креативної та ініціативної молоді, що зацікавлена розвиватись в IT</p>
                 </div>
             </div>

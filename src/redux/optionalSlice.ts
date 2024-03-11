@@ -24,7 +24,7 @@ const options: iOptional[] = [
     price: 80,
   },
   {
-    name: "Участь у креативній загадці «Define solution»",
+    name: "Участь у креативній загадці «Define solution» (3 залишилось)",
     active: false,
     price: 150,
   },

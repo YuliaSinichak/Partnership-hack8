@@ -55,7 +55,7 @@ export default function Feedbacks(){
                         alt="tskt"
                         className="w-full max-w-3xl self-center col-span-1 h-30"
                     />
-                <div className="border border-hack-green rounded-xl bg-black p-5 lg:p-12 col-span-2">
+                <div className="border border-hack-green rounded-xl backdrop-blur-lg p-5 lg:p-12 col-span-2">
                     Все пройшло дуже гарно, учасники великі молодці і класно, що більшість були такі зацікавлені.
                 </div>
                     
@@ -66,7 +66,7 @@ export default function Feedbacks(){
                     alt="Ukeess"
                     className="w-full max-w-3xl self-center col-span-1"
                 />
-                <div className="border border-hack-green rounded-xl bg-black p-5 lg:p-12 col-span-2">
+                <div className="border border-hack-green rounded-xl backdrop-blur-lg p-5 lg:p-12 col-span-2">
                     Сподобались активні захисти проєктів. Був хороший склад суддів і гарна організація загалом.
                 </div>
                     
@@ -77,7 +77,7 @@ export default function Feedbacks(){
                     alt="keenethics"
                     className="w-full max-w-3xl self-center col-span-1"
                 />
-                <div className="border border-hack-green rounded-xl bg-black p-5 lg:p-12 col-span-2">
+                <div className="border border-hack-green rounded-xl backdrop-blur-lg p-5 lg:p-12 col-span-2">
                         На змаганнях була крута командність і залученість людей, в яких горять очі!
                 </div>
                 
