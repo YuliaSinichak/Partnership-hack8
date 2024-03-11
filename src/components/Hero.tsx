@@ -32,7 +32,7 @@ export default function Hero() {
           
           <button
             onClick={() => handleScrollClick("#offers")}
-            className={`${press_start.className} flex self-center xl:self-end border-2 border-hack-green py-4 lg:py-[1.4vw] px-2 lg:px-[1.6vw] rounded-lg leading-none max-w-xs text-center w-full text-hack-green backdrop-blur-sm hover:scale-105 transition-all duration-500 relative z-30 xl:flex top-[1vw] justify-center`}
+            className={`${press_start.className} flex self-center xl:self-end border-2 border-hack-green py-4 lg:py-[1.4vw] px-2 lg:px-[1.6vw] rounded-lg leading-none max-w-xs text-center w-full text-hack-green backdrop-blur-xl bg-black hover:scale-105 transition-all duration-500 z-40 xl:flex justify-center`}
           >
             Стати партнером
           </button>
