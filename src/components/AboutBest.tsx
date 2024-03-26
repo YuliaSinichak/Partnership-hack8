@@ -68,7 +68,7 @@ export default function AboutBest() {
           <div className="flex flex-row gap-4 text-hack-green">
             35
             <span className={` text-white text-lg lg:text-3xl`}>
-              роки досвіду
+              років досвіду
             </span>
           </div>
         </div>
