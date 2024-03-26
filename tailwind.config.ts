@@ -33,13 +33,15 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "spin-slow": "spin 30s linear infinite",
-
         "pulse-new": "pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       colors: {
         "hack-green": "#3BAF0B",
         "hack-gray": "#426466",
         "hack-light-green": "#B4FF95",
+      },
+      fontFamily: {
+        press_start: ['Press_Start_2P', 'sans-serif'],
       },
     },
   },

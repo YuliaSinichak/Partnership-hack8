@@ -66,7 +66,7 @@ export default function AboutBest() {
             <span className={` text-white text-lg lg:text-3xl`}>країн</span>
           </div>
           <div className="flex flex-row gap-4 text-hack-green">
-            34
+            35
             <span className={` text-white text-lg lg:text-3xl`}>
               роки досвіду
             </span>
