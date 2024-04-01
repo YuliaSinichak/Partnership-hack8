@@ -8,7 +8,7 @@ const sellingPoints: iSellingPoint[] = [
         active: true,
         name: 'Basic',
         price: 300,
-        annotation: '',
+        annotation: 'Цей пакет є обов`язковим!',
         services: [
             `Логотип компанії на бренд-волл та на сайті проєкту`,
             `Промоція в соціальних мережах (інформація про компанію)`,

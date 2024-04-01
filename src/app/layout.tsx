@@ -7,8 +7,8 @@ import { inter } from "./fonts";
 import Providers from "@/redux/Providers";
 
 export const metadata: Metadata = {
-  title: "Partnership Hackath0n`8",
-  description: "Best Hackath0n`8 partnership broshure",
+  title: "Partnership Hackath0n`2024",
+  description: "BEST Hackath0n`2024 partnership broshure",
 };
 
 export default function RootLayout({
