@@ -21,7 +21,7 @@ const sellingPoints: iSellingPoint[] = [
         active: false,
         name: 'Preceptor',
         price: 700,
-        annotation: "3 залишилось",
+        annotation: "1 залишився",
         services: [
             'Можливість залучення судді та/або ментора до змагань',
             `Можливість провести воркшоп або тренінг серед учасників`,
